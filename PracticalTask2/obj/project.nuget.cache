@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zDcDNIiyS9XlNLOEnYoMfP7siSYYZ1zbJmNxOj79ienQ5QZ61/MJvTWQ+1eT5MbUrRioNuQLugCY/V6y+slI3g==",
+  "dgSpecHash": "Vj2m6Tb08te9gfx48kzUCgzFUXLuqGm1KFsur9fKHp6NZUefGNFdI/vc5iFIGALBVzwBXEq3fzQpjRCrkSFGxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\v.nichnikov\\Documents\\Code\\University\\PracticalTask2\\PracticalTask2\\PracticalTask2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\vnich\\Documents\\Code\\C#\\PracticalTask2\\PracticalTask2\\PracticalTask2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vnich\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\vnich\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\vnich\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\vnich\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

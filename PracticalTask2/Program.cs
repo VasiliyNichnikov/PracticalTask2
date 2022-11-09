@@ -1,5 +1,4 @@
-﻿using System;
-using PracticalTask2.Utils;
+﻿using PracticalTask2.Utils;
 
 namespace PracticalTask2
 {
@@ -7,11 +6,10 @@ namespace PracticalTask2
     {
         private static void Main(string[] args)
         {
+            var annealingMethod = new Algorithm();
             var cities = DeserializeCities.Cities;
-            foreach (var city in cities)
-            {
-                Console.WriteLine(city);
-            }
+
+            var readyRoute = annealingMethod.Run(cities);
         }
     }
 }
