@@ -22,7 +22,6 @@ namespace PracticalTask2
             _random = new Random();
         }
         
-        // todo нужно починить :)
         public City[] Run(City[] cities)
         {
             float answer = Func(cities);
