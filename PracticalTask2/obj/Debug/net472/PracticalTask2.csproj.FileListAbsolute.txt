@@ -1,0 +1,9 @@
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\bin\Debug\net472\PracticalTask2.dll
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\bin\Debug\net472\PracticalTask2.pdb
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.csproj.AssemblyReference.cache
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.AssemblyInfoInputs.cache
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.AssemblyInfo.cs
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.csproj.CoreCompileInputs.cache
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.dll
+C:\Users\vnich\Documents\Code\C#\PracticalTask2\PracticalTask2\obj\Debug\net472\PracticalTask2.pdb

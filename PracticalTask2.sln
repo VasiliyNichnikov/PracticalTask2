@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalTask2", "PracticalTask2\PracticalTask2.csproj", "{6B22B5B4-DCF5-4F68-B8C5-FFBC46BC352A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA5606D1-A81E-40E2-B652-6B44F1F185C3} = {EA5606D1-A81E-40E2-B652-6B44F1F185C3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinGraphics", "WinGraphics\WinGraphics.csproj", "{FD33C92A-BE6A-4653-9851-8C32C0C3C48A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,9 @@ Global
 		{6B22B5B4-DCF5-4F68-B8C5-FFBC46BC352A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B22B5B4-DCF5-4F68-B8C5-FFBC46BC352A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B22B5B4-DCF5-4F68-B8C5-FFBC46BC352A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD33C92A-BE6A-4653-9851-8C32C0C3C48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD33C92A-BE6A-4653-9851-8C32C0C3C48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD33C92A-BE6A-4653-9851-8C32C0C3C48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD33C92A-BE6A-4653-9851-8C32C0C3C48A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
