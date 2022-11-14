@@ -9,7 +9,15 @@ namespace PracticalTask2
             var annealingMethod = new Algorithm();
             var cities = DeserializeCities.Cities;
 
-            var readyRoute = annealingMethod.Run(cities);
+            var readyRoute = annealingMethod.Run(new []
+            {
+                cities[0],
+                cities[10],
+                cities[67],
+                cities[15],
+                cities[100],
+                cities[25]
+            });
         }
     }
 }

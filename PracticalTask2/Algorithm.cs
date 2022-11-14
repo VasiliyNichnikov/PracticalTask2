@@ -5,23 +5,22 @@ namespace PracticalTask2
     public class Algorithm
     {
         private Random _random;
-        private double _y = 0.99d;
-        private const int NumberOfPermutations = 1000; // кол-во перестановок городов  в поисках оптимального решения 
+        private double _y = 0.1;
+        private const int NumberOfPermutations = 10; // кол-во перестановок городов  в поисках оптимального решения 
 
         public Algorithm()
         {
             _random = new Random();
         }
         
-        
-        public City[] Run(City[] cities)
+        // todo нужно починить :)
+        public City[] Run(City[] cities, double endT=0.00001d)
         {
-            double t = 1d;
             float answer = Func(cities);
-            
-            for (int i = 0; i < NumberOfPermutations; i++)
+            double initialT = 10d;
+            var t = initialT;
+            for (int i = 1; i < NumberOfPermutations + 1; i++)
             {
-                t *= _y;
                 // Копируем наш основной массив
                 var copyCities = new City[cities.Length];
                 cities.CopyTo(copyCities, 0);
@@ -31,10 +30,23 @@ namespace PracticalTask2
                 
                 // Получаем обновленный ответ
                 var newAnswer = Func(copyCities);
-                if (newAnswer > answer || RandomFromZeroToOne() < Math.Exp((newAnswer - answer) / t))
+                
+                // Console.WriteLine($"NewAnswer: {newAnswer}. Answer: {answer}. Exp: {RandomFromZeroToOne() < Math.Exp((newAnswer - answer) / t)}");
+                // Console.WriteLine($"Value: {RandomFromZeroToOne()}. Exp: {}");
+                var diff = newAnswer - answer;
+                var exp = Math.Exp(-diff / t);
+                Console.WriteLine($"Diff: {diff}. T: {t}. Exp: {exp}");
+                if (newAnswer < answer || RandomFromZeroToOne() < Math.Exp((newAnswer - answer) / t))
                 {
                     cities = copyCities;
                     answer = newAnswer;
+                }
+
+                t = initialT * _y / i;
+                
+                if (t < endT)
+                {
+                    break;
                 }
             }
 
@@ -43,6 +55,8 @@ namespace PracticalTask2
 
         private void RandomSwapCity(ref City[] cities)
         {
+            // todo поменять на инветирование между выбранными городами
+            // todo статья: https://habr.com/ru/post/209610/
             int indexCityOne = _random.Next(0, cities.Length);
             int indexCityTwo = _random.Next(0, cities.Length);
 
